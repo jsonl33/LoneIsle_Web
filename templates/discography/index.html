@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block con %}
     {% if user.is_superuser %}
+    
+{% comment %} 어드민에게 곡 업로드 권한 {% endcomment %}
     {% else %}
+    hello discog
     {% endif %}
 {% endblock con %}

@@ -38,7 +38,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,7 +47,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'discography.apps.DiscographyConfig',
+    'account.apps.AccountConfig',
+    'store.apps.StoreConfig'
+    
 ]
+
+#AUTH_USER_MODEL = "acc.User"
+MEDIA_URL = '/media/'		# ex) /media/photo1.png
+MEDIA_ROOT = BASE_DIR/"media"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
