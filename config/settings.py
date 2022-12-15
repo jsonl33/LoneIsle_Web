@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 ]
 
 #AUTH_USER_MODEL = "acc.User"
-MEDIA_URL = '/media/'		# ex) /media/photo1.png
+MEDIA_URL = "/media/"   	# ex) /media/photo1.png
 MEDIA_ROOT = BASE_DIR/"media"
 
 MIDDLEWARE = [
@@ -121,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'Asia/Seoul'
 

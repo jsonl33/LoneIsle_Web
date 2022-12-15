@@ -1,9 +1,23 @@
 {% extends 'base.html' %}
-{% block con %}
-    {% if user.is_superuser %}
-    
-{% comment %} 어드민에게 곡 업로드 권한 {% endcomment %}
-    {% else %}
-    hello discog
-    {% endif %}
-{% endblock con %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discography</title>
+    <style>
+        .discog-body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="discog-body">
+    {% block con %}
+        {% if user.is_superuser %}
+        {% else %}
+            hello discog
+        {% endif %}
+    {% endblock con %}
+</body>
+</html>
