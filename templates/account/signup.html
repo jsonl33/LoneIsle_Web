@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block con %}
+    <div class="row mb-3 mt-3">
+        <div class="col-4">
+            <!-- spacing -->
+        </div>
+        <div class="col-4">
+            <h2 class="d-flex justify-content-center ms-5 mb-3" style="font-weight: bold;">회원가입</h2>
+            <div class="card text-center" style="width: 30rem;">
+                <div class="card-body">
+                    <label class="form-label d-flex justify-content-start ms-1">이메일</label>
+                    <input type="email" name="user_email" class="form-control">
+
+                    <label class="form-label d-flex justify-content-start ms-1 mt-2">비밀번호</label>
+                    <input type="passwd" name="user_passwd" class="form-control">
+
+                    <label class="form-label d-flex justify-content-start ms-1 mt-2">비밀번호 확인</label>
+                    <input type="passwd" name="user_passwd_check" class="form-control">
+
+                    
+
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-primary mt-3" style="height: 50px;">
+                            <label class="mt-1" style="font-size: 20px;">회원가입</label>
+                        </a>
+                    </div>  
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <!-- spacing -->
+        </div>
+    </div>
+    {% endblock con %}
+</body>
+</html>
+

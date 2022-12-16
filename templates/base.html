@@ -7,6 +7,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/e29d84a803.js" crossorigin="anonymous"></script>
         <style>
+            header {
+                box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+            }
             .footer-h4 {
                 font-weight: bold;
                 font-size: 20px;
@@ -30,12 +33,10 @@
             }
             .navbar {
                 background-color:whitesmoke;
-                font-weight: bold;
-                font-size: 20px;
+                font-size: 18px;
+                color: gray;
             }
-            header {
-                box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
-            }
+            
         </style>
     </head>
 
@@ -48,29 +49,26 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
     
-                    <div class="d-flex justify-content-center" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            
-                            <li class="me-2">
+                            <li class="nav-item me-2">
                                 <a class="nav-link active" aria-current="page" href="#">Video</a>
                             </li>  
-                            <li class="me-2">
+                            <li class="nav-item me-2">
                                 <a class="nav-link active" aria-current="page" href="{% url 'discography:index' %}">Discography</a>
                             </li>
-                            <li class="me-2">
+                            <li class="nav-item me-2">
                                 <a class="nav-link active" aria-current="page" href="{% url 'store:index' %}">Beat Store</a>
                             </li>  
-                            <li class="me-2">
+                            <li class="nav-item me-2">
                                 <a class="nav-link active" aria-current="page" href="#">Community</a>
                             </li>  
-                            
                         </ul>
-                        
                     </div>
     
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-light me-2">로그인</button>
-                        <button type="button" class="btn btn-primary">회원가입</button>
+                        <a class="btn btn-light me-2" href="{% url 'account:signin' %}" role="button" >로그인</a>
+                        <a class="btn btn-primary me-2" href="{% url 'account:signup' %}" role="button" >회원가입</a>
                     </div>
                 </div>
             </nav>
