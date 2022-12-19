@@ -47,9 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'discography.apps.DiscographyConfig',
+    'about.apps.AboutConfig',
     'account.apps.AccountConfig',
-    'store.apps.StoreConfig'
+    'store.apps.StoreConfig',
+    'video.apps.VideoConfig',
     
 ]
 
