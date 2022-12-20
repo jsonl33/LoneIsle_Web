@@ -21,5 +21,7 @@ urlpatterns = [
     path('account/', include('account.urls')),
     path('about/', include('about.urls')),
     path('store/', include('store.urls')),
-    path('video/', include('video.urls'))
+    path('video/', include('video.urls')),
+    path('community/', include('community.urls')),
+    
 ]

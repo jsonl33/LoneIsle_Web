@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'store.apps.StoreConfig',
     'video.apps.VideoConfig',
+    'community.apps.CommunityConfig',
     
 ]
 
