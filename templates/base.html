@@ -51,9 +51,18 @@
     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item me-2">
-                                <a class="nav-link active" aria-current="page" href="{% url 'about:index' %}">About</a>
-                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  About
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="{% url 'about:index' %}">LoneIsle</a></li>
+                                  <li><a class="dropdown-item" href="#">Discography</a></li>
+                                  <li><a class="dropdown-item" href="#">Business</a></li>
+                                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                                </ul>
+                              </li>
                             <li class="nav-item me-2">
                                 <a class="nav-link active" aria-current="page" href="{% url 'video:index' %}">Video</a>
                             </li>  
